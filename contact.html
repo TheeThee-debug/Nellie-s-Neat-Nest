@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contact | Nellie's Neat Nest LLC</title>
+  <meta
+    name="description"
+    content="Request a free quote from Nellie's Neat Nest LLC for Airbnb cleaning, cabin cleaning, restocking, laundry support, and rental turnovers."
+  />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <div class="butterfly-layer" aria-hidden="true">
+    <span class="float-butterfly b1">🦋</span>
+    <span class="float-butterfly b2">🦋</span>
+    <span class="float-butterfly b3">🦋</span>
+    <span class="float-butterfly b4">🦋</span>
+    <span class="float-butterfly b5">🦋</span>
+    <span class="float-butterfly b6">🦋</span>
+  </div>
+
+  <header class="site-header">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">🦋</span>
+      <span class="logo-text">
+        <strong>Nellie's Neat Nest LLC</strong>
+        <small>Professional Airbnb & Rental Cleaning</small>
+      </span>
+    </a>
+
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="airbnb-hosts.html">For Hosts</a>
+      <a href="service-areas.html">Areas</a>
+      <a href="contact.html" class="nav-btn">Get Quote</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <p class="eyebrow">Request a Quote</p>
+      <h2>Let’s Get Your Property Guest-Ready</h2>
+      <p>
+        Tell us about your Airbnb, cabin, short-term rental, or move-in/move-out cleaning needs.
+        We’ll review the details and follow up with next steps.
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="contact-section">
+
+        <div class="contact-info">
+          <p class="eyebrow">Contact Nellie's Neat Nest LLC</p>
+          <h2>Start With a Free Quote Request</h2>
+          <p>
+            Whether you need a one-time clean, recurring Airbnb turnovers, restocking,
+            laundry support, or a deeper reset, this form helps us understand your property.
+          </p>
+
+          <div class="contact-card">
+            <h3>Best For</h3>
+            <p>
+              Airbnb hosts, vacation rental owners, cabin owners, landlords,
+              property managers, and move-in/move-out cleanings.
+            </p>
+          </div>
+
+          <div class="contact-card">
+            <h3>Quick Contact</h3>
+            <p>
+              Phone/Text:
+              <a href="tel:9289885025"><strong>928-988-5025</strong></a>
+            </p>
+            <p>
+              We recommend submitting the form first so we have your property details.
+            </p>
+          </div>
+
+          <div class="contact-card">
+            <h3>Helpful Details to Include</h3>
+            <ul>
+              <li>Property type and location</li>
+              <li>Bedrooms and bathrooms</li>
+              <li>Cleaning date or deadline</li>
+              <li>Laundry or restocking needs</li>
+              <li>Any special instructions</li>
+            </ul>
+          </div>
+        </div>
+
+        <form
+            class="contact-form"
+            name="quote-request"
+            method="POST"
+            action="/thank-you.html"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+>
+           <input type="hidden" name="form-name" value="quote-request" />
+
+             <p class="hidden">
+             <label>Do not fill this out: <input name="bot-field" /></label>
+            </p>
+
+          <label for="name">Your Name</label>
+          <input id="name" type="text" name="name" placeholder="Your full name" required />
+
+          <label for="email">Email Address</label>
+          <input id="email" type="email" name="email" placeholder="your@email.com" required />
+
+          <label for="phone">Phone Number</label>
+          <input id="phone" type="tel" name="phone" placeholder="Your phone number" required />
+
+          <label for="property-type">Property Type</label>
+          <select id="property-type" name="property-type" required>
+            <option value="">Select one</option>
+            <option>Airbnb</option>
+            <option>Cabin Rental</option>
+            <option>Vacation Rental</option>
+            <option>Short-Term Rental</option>
+            <option>Long-Term Rental</option>
+            <option>Move-In / Move-Out</option>
+            <option>Other</option>
+          </select>
+
+          <label for="location">Property Location</label>
+          <input
+            id="location"
+            type="text"
+            name="property-location"
+            placeholder="City or general area"
+            required
+          />
+
+          <label for="bedrooms">Bedrooms</label>
+          <select id="bedrooms" name="bedrooms" required>
+            <option value="">Select one</option>
+            <option>Studio</option>
+            <option>1 Bedroom</option>
+            <option>2 Bedrooms</option>
+            <option>3 Bedrooms</option>
+            <option>4 Bedrooms</option>
+            <option>5+ Bedrooms</option>
+          </select>
+
+          <label for="bathrooms">Bathrooms</label>
+          <select id="bathrooms" name="bathrooms" required>
+            <option value="">Select one</option>
+            <option>1 Bathroom</option>
+            <option>2 Bathrooms</option>
+            <option>3 Bathrooms</option>
+            <option>4+ Bathrooms</option>
+          </select>
+
+          <label for="date">Preferred Cleaning Date</label>
+          <input id="date" type="date" name="preferred-date" />
+
+          <label for="services">Services Needed</label>
+          <select id="services" name="main-service" required>
+            <option value="">Select one</option>
+            <option>Airbnb Turnover Cleaning</option>
+            <option>Cabin Cleaning</option>
+            <option>Deep Cleaning</option>
+            <option>Move-In / Move-Out Cleaning</option>
+            <option>Restocking Support</option>
+            <option>Laundry Support</option>
+            <option>Not Sure Yet</option>
+          </select>
+
+          <label>Add-Ons Requested</label>
+          <div class="form-checks">
+            <label><input type="checkbox" name="addons" value="Laundry" /> Laundry</label>
+            <label><input type="checkbox" name="addons" value="Restocking" /> Restocking</label>
+            <label><input type="checkbox" name="addons" value="Photo Report" /> Photo Report</label>
+            <label><input type="checkbox" name="addons" value="Welcome Basket" /> Welcome Basket</label>
+            <label><input type="checkbox" name="addons" value="Decorations" /> Decorations</label>
+            <label><input type="checkbox" name="addons" value="Emergency Turnover" /> Emergency Turnover</label>
+          </div>
+
+          <label for="message">Property Details / Special Instructions</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            placeholder="Tell us about timing, guest checkout/check-in, supplies, laundry, parking, access, pets, or anything important."
+            required
+          ></textarea>
+
+          <button type="submit" class="btn primary">Send Quote Request</button>
+
+          <p class="form-note">
+            By submitting this form, you agree to be contacted regarding your quote request.
+          </p>
+        </form>
+
+      </div>
+    </section>
+
+    <section class="cta">
+      <p class="eyebrow center">Need Faster Help?</p>
+      <h2>Call or Text Us Directly.</h2>
+      <p>
+        For urgent turnover needs, you can call or text us. Availability may vary,
+        but we’ll do our best to help.
+      </p>
+
+      <div class="hero-buttons center">
+        <a href="tel:9289885025" class="btn primary">Call Now</a>
+        <a href="sms:9289885025" class="btn secondary">Text Us</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand">
+      <span class="logo-mark">🦋</span>
+      <h3>Nellie's Neat Nest LLC</h3>
+      <p>Professional Airbnb Cleaning • Cabin Rentals • Short-Term Rentals • Move-In / Move-Out</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="airbnb-hosts.html">For Hosts</a>
+      <a href="service-areas.html">Areas</a>
+      <a href="faq.html">FAQ</a>
+      <a href="terms-and-policies.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <p class="copyright">© 2026 Nellie's Neat Nest LLC. All rights reserved.</p>
+  </footer>
+
+  <div class="floating-actions">
+    <a href="tel:9289885025">Call</a>
+    <a href="sms:9289885025">Text</a>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
